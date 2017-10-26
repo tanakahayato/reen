@@ -34,66 +34,51 @@
 
 .top__box {
   height:100px;
-  display: table;
 }
 
 .reen__header__top {
-  position: relative;
-}
-
-.mail_tel {
-  position: inherit;
-  top: 3px;
-  float: left;
+  height: 40px;
 }
 
 .head__icon {
   float: right;
+  position: relative;
 }
 
-.mail_box {
+.adress_list {
+  position: relative;
+}
+
+.adress_list > li {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 20px;
+  position: inherit;
+  top: 10px;
+  margin-right: 26px;
+  font-size: 12px;
+  height: 13px;
+}
+
+.mail {
   background-image: url(../img/header/icon-mail-off.png);
 }
 
-.mail:hover .mail_box {
+.mail:hover {
   background-image: url(../img/header/icon-mail-on.png);
   cursor: pointer;
-}
-
-.mail:hover .mail_txt_head {
   color: #00bc9c;
-  cursor: pointer;
 }
 
-.tel_box {
+.tel {
   background-image: url(../img/header/icon-tel-off.png);
 }
 
-.tel:hover .tel_box {
+.tel:hover {
   background-image: url(../img/header/icon-tel-on.png);
   cursor: pointer;
-}
-
-.tel:hover .tel_txt_head {
   color: #00bc9c;
-  cursor: pointer;
-}
-
-.icon_2 {
-  width: 24px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: inline-block;
-}
-
-.head__icon__wrap {
-  float: right;
-}
-
-.icon {
-  display: inline-block;
-  margin-right: 26px;
 }
 
 .icon_face {
@@ -156,17 +141,18 @@
   background-image: url(../img/header/icon-dribbble-on.png);
 }
 
-.icon_6 {
-  width: 24px;
-  height: 35px;
+.sns_icons {
+  width: 30px;
+  height: 40px;
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
+  position: inherit;
+  bottom: 17px;
 }
 
 .reen__header {
-  margin-top: 10px;
-  text-align: center;
+  margin-top: 44px;
   float: left;
 }
 
@@ -184,17 +170,12 @@
 .reen {
   float: left;
   margin-right: 100px;
+  margin-top: 30px;
 }
 
 .reen:hover {
   opacity: 0.6;
   cursor: pointer;
-}
-
-.reen__logo {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
 }
 
 .main__img {
@@ -398,16 +379,12 @@
   color: #fff;
 }
 
-.work_sub_1 {
+.work > li {
   margin-right: 30px;
 }
 
-.work_sub_2 {
-  margin-right: 30px;
-}
-
-.work_sub_3 {
-  margin-right: 30px;
+.work > li:last-child {
+margin-right: 0;
 }
 
 .sub_txt {
@@ -498,7 +475,7 @@
   margin-top: 20px;
   width: 260px;
   border-radius: 5px;
-  border:none;
+  border: none;
   outline: none;
 }
 
@@ -652,18 +629,6 @@
 }
 
 .foot_address_txt {
-  position: inherit;
-  left: 10px;
-  bottom: 4px;
-}
-
-.foot_tel_txt {
-  position: inherit;
-  left: 10px;
-  bottom: 4px;
-}
-
-.foot_mail_txt {
   position: inherit;
   left: 10px;
   bottom: 4px;
